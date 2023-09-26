@@ -63,11 +63,8 @@ export const getMessages = async (req: Request, res: Response) => {
     const indexes = 25 * (parsedPage - 1);
     const conversations = conversationList.splice(indexes, 25);
 
-    // console.log(conversationList);
-
     res.send({ pages: pagesCount, conversations });
-  } catch (error) {
-    console.log(error);
+  } catch {
     res.sendStatus(400);
   }
 };

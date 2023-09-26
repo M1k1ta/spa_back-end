@@ -36,7 +36,7 @@ export const addFiles = async (req: Request, res: Response) => {
     const docsLinks: NewFiles[] = [];
 
     savedFiles.forEach(({ id, name, mimetype }) => {
-      const link = `http://localhost:5000/files/${id}`;
+      const link = `https://spa-back-end-5cn9.onrender.com/files/${id}`;
       const file = { id, name, type: mimetype, link};
 
       if (mimetype === 'text/plain') {
