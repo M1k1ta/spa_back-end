@@ -9,7 +9,8 @@
     "sync": "npx ts-node src/sync.ts",
     "build": "npm i && tsc -p .",
     "lint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "public": "node build/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
