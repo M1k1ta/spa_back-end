@@ -4,6 +4,8 @@
 
 [FRONT-END](https://github.com/M1k1ta/spa_front-end)
 
+[SHEMA_BD](https://www.figma.com/file/xBjjAgeCtjX7x5Kv4mYBNf/Untitled?type=whiteboard&node-id=0%3A1&t=UhbXXTrGos1xJOHf-1)
+
 GET
 
   [/messages](https://spa-back-end-5cn9.onrender.com/messages)
