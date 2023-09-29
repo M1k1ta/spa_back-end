@@ -44,7 +44,7 @@ export const addFiles = async (req: Request, res: Response) => {
         return;
       }
 
-      docs.push(file);
+      photos.push(file);
     });
 
 
