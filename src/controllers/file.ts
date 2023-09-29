@@ -32,25 +32,25 @@ export const addFiles = async (req: Request, res: Response) => {
       })
     );
 
-    const photosLinks: NewFiles[] = [];
-    const docsLinks: NewFiles[] = [];
+    const photos: NewFiles[] = [];
+    const docs: NewFiles[] = [];
 
     savedFiles.forEach(({ id, name, mimetype }) => {
       const link = `https://spa-back-end-5cn9.onrender.com/files/${id}`;
       const file = { id, name, type: mimetype, link};
 
       if (mimetype === 'text/plain') {
-        docsLinks.push(file);
+        docs.push(file);
         return;
       }
 
-      photosLinks.push(file);
+      docs.push(file);
     });
 
 
     console.log(JSON.stringify(savedFiles));
 
-    res.send({ photosLinks, docsLinks });
+    res.send({ photos, docs });
   } catch (error) {
     console.log('Error uploading files:', error);
     res.sendStatus(400);
