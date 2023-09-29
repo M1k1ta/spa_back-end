@@ -31,6 +31,11 @@ POST
   /files send data = new FormData() in FormData array files
   
   /files return {
-    photosLinks: [],
-    docsLinks: [],
+    photos: [{
+      id,
+      name,
+      type,
+      link,
+    }],
+    docs: [],
   }
